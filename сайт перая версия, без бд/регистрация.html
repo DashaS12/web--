@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title> BestEmployee </title>
+    <link rel="stylesheet" type="text/css" href="css/style2.css">
+    <script src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="js/jquery.vide.min.js"></script>
+    <script type="text/javascript">
+  function validate_form ( )
+      {
+        valid = true;
+      
+              if ( document.contact_form.contact_name.value == "" )
+              {
+                      alert ( "Пожалуйста заполните поле 'Ваше имя'." );
+                      valid = false; 
+              }
+              if ( document.contact_form.password.value == "" )
+              {
+                      alert ( "Введите пароль" );
+                      valid = false;
+              }
+              if ( document.contact_form.RePassword.value == "" )
+              {
+                      alert ( "Введите повторный пароль" );
+                      valid = false;
+              }
+              if ( document.contact_form.email.value == "" )
+              {
+                      alert ( "Введите вашу почту" );
+                      valid = false;
+              }
+    }
+       </script> 
+    </head> 
+      <body background="img70.jpg">
+        <header class="header">
+                <div class="container">
+                    <div class="header__inner">
+                        <div class="header__logo">BestEmployee</div>
+            
+                        <nav class="nav">
+                            <ul>
+                                <li> <a href="http://site/" class="txt" > Главная </a> <front size="5"></front> </li>
+                                <li> <a href="file:///C:/Users/User/Desktop/Проба/О%20приложении.html" class="txt" > О сайте </a> <front size="5"></front> </li>
+                                <li> <a href="file:///D:/OPS/OpenServer/domains/site/регистрация.html" class="txt" > Регистрация </a> <front size="5"></front> </li>
+                                <li>  <a href="file:///C:/Users/User/Desktop/Проба/test.html" class="txt" > Тест </a> <front size="5"></front> </li>
+                        
+                        
+                               </ul>
+                        </nav>
+                    </div>
+                </div>
+            </header>
+  
+       <form name="contact_form" method="post"  onsubmit="return validate_form ( );">
+        <center><h1>Регистрация</h1></center>
+        
+         <p>Ваше имя: <input type="text" name="contact_name"></p>
+  
+          <p>Введите пароль: <input type="password" name="password"></p>
+       
+          <p>Повторите пароль: <input type="Password" name="RePassword"></p>
+    
+          <p>Введите вашу почту: <input type="email" name="email"></p>
+         <input type="submit" name="send" value="Отправить данные"></p>
+        
+          </form>
+        </body>
+</html>
